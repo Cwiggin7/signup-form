@@ -1,5 +1,36 @@
+@font-face {
+    font-family: NorseBold;
+    src: url("fonts/Norse-Bold.otf") format("opentype");
+}
+
 * {
     padding: 0;
     margin: 0;
 }
 
+body {
+    display: flex;
+    height: 100vh;
+}
+
+#page-left {
+    background-image: url("images/halie-west-25xggax4bSA-unsplash.jpg");
+    width: calc(100% / 3);
+}
+
+#transparent-block {
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+    width: 100%;
+}
+
+h1 {
+    font-family: 'NorseBold';
+}
+
+#page-right {
+    width: calc(200% / 3);
+}
