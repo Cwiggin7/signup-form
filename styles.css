@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 @font-face {
     font-family: NorseBold;
     src: url("fonts/Norse-Bold.otf") format("opentype");
@@ -6,6 +8,7 @@
 * {
     padding: 0;
     margin: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 body {
@@ -13,9 +16,15 @@ body {
     height: 100vh;
 }
 
+a {
+    color: white;
+}
+
 #page-left {
     background-image: url("images/halie-west-25xggax4bSA-unsplash.jpg");
+    background-size: cover;
     width: calc(100% / 3);
+    position: relative;
 }
 
 #transparent-block {
@@ -23,14 +32,78 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 10vh;
-    width: 100%;
+    margin-top: 20vh;
+    padding: 10px 0;
+}
+
+img {
+    width: 20%;
 }
 
 h1 {
     font-family: 'NorseBold';
+    font-size: clamp(1.5rem, 5vw, 3rem);
+    color: white;
+}
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: white;
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
 }
 
 #page-right {
+    background-color: #ffffff;
     width: calc(200% / 3);
+}
+
+form {
+    background: #e9ecef;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30vh;
+}
+
+.container {
+    display: flex;
+}
+
+legend {
+    font-size: clamp(1.5rem, 2.5vw, 4rem);
+    padding: 10px 10px 0 40px;
+}
+
+label {
+    font-size: 12px;
+}
+
+.column {
+    padding: 20px 20px 20px 40px;
+}
+
+.left {
+    width: 25%;
+}
+  
+.right {
+    width: 75%;
+}
+
+input {
+    border: 2px solid #000;
+    margin-bottom: 15px;
+    padding: 5px;
+    border-radius: 5px;
+    width: 200px;
+}
+
+input[type="submit"] {
+    margin: 20px 20px 20px 40px;
+    padding: 10px;
+    cursor: pointer;
 }
