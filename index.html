@@ -8,7 +8,7 @@
 <body>
     <div id="page-left">
         <div id="transparent-block">
-            <img src="images/odin-lined.png" alt="#">
+            <img src="images/odin-lined.png" alt="odin project logo">
             <h1>odin</h1>
         </div>
 
@@ -16,48 +16,53 @@
              on <a href="https://unsplash.com/">Unsplash</a></div>
     </div>
     <div id="page-right">
+        <div class="description">
+            <p>This is not a real online service! Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta optio magni omnis nemo excepturi nihil. Suscipit dolore explicabo fugiat officiis.</p>
+            <p>You <em>know</em> you want to.</p>
+        </div>
+
         <form id="myform" action="#" method="get">
             <legend>Let's do this!</legend>
 
-            <div class="container">
-                <div class="column left">
-                    <div>
-                        <label for="first_name">FIRST NAME</label>
-                    </div>
-                    <input type="text" name="first_name" id="first_name" required>
-                
-                    <div>
-                        <label for="email">EMAIL</label>
-                    </div>
-                    <input type="email" name="email" id="email" required>
-
-                    <div>
-                        <label for="password">PASSWORD</label>
-                    </div>
-                    <input type="password" name="password" id="password" required>
+            <div class="column">
+                <div>
+                    <label for="first_name">FIRST NAME</label>
                 </div>
+                <input type="text" name="first_name" id="first_name" required>
 
-                <div class="column right">
-                    <div>
-                        <label for="last_name">LAST NAME</label>
-                    </div>
-                    <input type="text" name="last_name" id="last_name" required>
-
-                    <div>
-                        <label for="tel">PHONE NUMBER</label>
-                    </div>
-                    <input type="text" name="tel" id="tel" pattern="[0-9]{10}" 
-                    title="Must contain 10 characters" required>
-
-                    <div>
-                        <label for="confirm_password">CONFIRM PASSWORD</label>
-                    </div>
-                    <input type="password" name="confirm_password" id="confirm_password" required>
+                <div>
+                    <label for="email">EMAIL</label>
                 </div>
+                <input type="email" name="email" id="email" required>
+
+                <div>
+                    <label for="password">PASSWORD</label>
+                </div>
+                <input type="password" name="password" id="password" required>
+            </div>
+
+            <div class="column">
+                <div>
+                    <label for="last_name">LAST NAME</label>
+                </div>
+                <input type="text" name="last_name" id="last_name" required>
+
+                <div>
+                    <label for="tel">PHONE NUMBER</label>
+                </div>
+                <input type="text" name="tel" id="tel" pattern="[0-9]{10}" 
+                title="Must contain 10 characters" required>
+
+                <div>
+                    <label for="confirm_password">CONFIRM PASSWORD</label>
+                </div>
+                <input type="password" name="confirm_password" id="confirm_password" required>
             </div>
         </form>
 
         <input type="submit" form="myform" value="Create Account">
+
+        <p class="login">Already have an account? <a href="#">Log in</a></p>
     </div>
 </body>
 </html>
