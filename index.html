@@ -4,16 +4,19 @@
     <title>Home</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <div id="page-left">
         <div id="transparent-block">
-            <img src="images/odin-lined.png" alt="odin project logo">
-            <h1>odin</h1>
+            <img src="images/30-02.svg" alt="odin project logo">
+            <h1>Japan Tours</h1>
         </div>
 
-        <div id="footer">Photo by <a href="https://unsplash.com/@haliewestphoto">Halie West</a>
-             on <a href="https://unsplash.com/">Unsplash</a></div>
+        <div id="footer">
+            <p>Photo by <a href="https://unsplash.com/@reddalec">Redd</a> on <a href="https://unsplash.com/">Unsplash</a></p>
+            <a href="https://www.vecteezy.com/free-vector/japanese-logo">Japanese Logo Vectors by Vecteezy</a>
+        </div>
     </div>
     <div id="page-right">
         <div class="description">
@@ -57,10 +60,11 @@
                     <label for="confirm_password">CONFIRM PASSWORD</label>
                 </div>
                 <input type="password" name="confirm_password" id="confirm_password" required>
+                <span id="message"></span>
             </div>
         </form>
 
-        <input type="submit" form="myform" value="Create Account">
+        <input id="submit" type="submit" form="myform" value="Create Account">
 
         <p class="login">Already have an account? <a href="#">Log in</a></p>
     </div>
