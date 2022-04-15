@@ -24,7 +24,7 @@
             <p>You <em>know</em> you want to.</p>
         </div>
 
-        <form id="myform" action="#" method="get">
+        <form id="myform" action="#" method="POST">
             <legend>Let's do this!</legend>
 
             <div class="column">
@@ -41,7 +41,8 @@
                 <div>
                     <label for="password">PASSWORD</label>
                 </div>
-                <input type="password" name="password" id="password" required>
+                <input type="password" name="password" id="password" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$"
+                title="Minimum eight characters, at least one letter and one number" required>
             </div>
 
             <div class="column">

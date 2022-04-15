@@ -138,7 +138,10 @@ input[type="submit"] {
 }
 
 #message {
+    
     color: red;
+    display: block;
+    margin-bottom: 8px;
 }
 
 /* left margin for right portion of page */
